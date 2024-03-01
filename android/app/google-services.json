@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179613337101",
+    "project_id": "gdsc-cacb5",
+    "storage_bucket": "gdsc-cacb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179613337101:android:4992292966f2c3ac107744",
+        "android_client_info": {
+          "package_name": "com.example.login_backend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179613337101-bq42hdj1a8494o1arfeeuu84fp5gcpov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTQg833IfnDmeYHi25wqy2NCXpCMzQ-0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179613337101-bq42hdj1a8494o1arfeeuu84fp5gcpov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -103,8 +103,8 @@ class _Day24AuthenticationState extends State<authentication> {
                         if (_formkey.currentState!.validate()) {
                           _formkey.currentState!.save();
                           isLogin
-                              ? signin(email, password)
-                              : signup(email, password);
+                              ? signin(email, password,context)
+                              : signup(email, password,context);
                           Navigator.push(
                               context,
                               MaterialPageRoute(

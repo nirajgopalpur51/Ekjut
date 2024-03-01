@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class PersonInfo extends StatefulWidget {
@@ -116,7 +117,9 @@ class _PersonInfoState extends State<PersonInfo> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {FirebaseAuth.instance.signOut();},
+                    onLongPress: () {
+                    },
                     child: Text(
                       'Log out',
                       style: TextStyle(

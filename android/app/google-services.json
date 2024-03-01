@@ -1,34 +1,78 @@
 {
   "project_info": {
-    "project_number": "179613337101",
-    "project_id": "gdsc-cacb5",
-    "storage_bucket": "gdsc-cacb5.appspot.com"
+    "project_number": "244645064126",
+    "firebase_url": "https://green-cdcba-default-rtdb.firebaseio.com",
+    "project_id": "green-cdcba",
+    "storage_bucket": "green-cdcba.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:179613337101:android:4992292966f2c3ac107744",
+        "mobilesdk_app_id": "1:244645064126:android:36f187229662d50886ddef",
         "android_client_info": {
           "package_name": "com.example.login_backend"
         }
       },
       "oauth_client": [
         {
-          "client_id": "179613337101-bq42hdj1a8494o1arfeeuu84fp5gcpov.apps.googleusercontent.com",
+          "client_id": "244645064126-3m8lccp5rpmdgle7qdjkqv3st230ajfu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBTQg833IfnDmeYHi25wqy2NCXpCMzQ-0U"
+          "current_key": "AIzaSyC0073-GBllS2n98tu4j7X9nL-IZn1AMxo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "179613337101-bq42hdj1a8494o1arfeeuu84fp5gcpov.apps.googleusercontent.com",
+              "client_id": "244645064126-3m8lccp5rpmdgle7qdjkqv3st230ajfu.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "244645064126-i1fcbcs1a1ka6r8dpv788d3hr025np5c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tourQuest"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244645064126:android:f43b27c540eb50bd86ddef",
+        "android_client_info": {
+          "package_name": "com.example.tour_quest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244645064126-3m8lccp5rpmdgle7qdjkqv3st230ajfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0073-GBllS2n98tu4j7X9nL-IZn1AMxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244645064126-3m8lccp5rpmdgle7qdjkqv3st230ajfu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244645064126-i1fcbcs1a1ka6r8dpv788d3hr025np5c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tourQuest"
+              }
             }
           ]
         }

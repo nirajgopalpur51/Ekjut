@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:login_backend/Screens/doctor_schedule.dart';
@@ -7,6 +8,7 @@ import 'package:login_backend/Screens/register_screen.dart';
 import 'package:login_backend/navigation.dart';
 import 'package:login_backend/provider/login_manager.dart';
 import 'package:provider/provider.dart';
+import 'Screens/LogIn.dart';
 import 'Screens/card.dart';
 import 'auth.dart';
 import 'home.dart';
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
         ),
         // home: HomeScreen(),
         // home: Navigation(),
-        home: authentication(),
+        home:FirebaseAuth.instance.currentUser != null?Navigation():LoginPage(),
       ),
     );
   }

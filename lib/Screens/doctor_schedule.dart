@@ -49,38 +49,38 @@ class _DoctorScheduleState extends State<DoctorSchedule>
                     children: [
                       Text(
                         'Dr. Gurpreet Singh',
-                        style: TextStyle(color:Colors.red,fontSize: 18.5,fontWeight: FontWeight.bold),
+                        style: TextStyle(color:Colors.red,fontSize: 16.5,fontWeight: FontWeight.bold),
                       ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Experience :- " ,style: TextStyle(fontSize:18,fontWeight: FontWeight.bold),),
-                          Text("10 Yrs",style: TextStyle(fontSize:16,),),
+                          Text("Experience : " ,style: TextStyle(fontSize:15,fontWeight: FontWeight.bold),),
+                          Text("10 Y",style: TextStyle(fontSize:13,),),
                         ],
                       ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Fee :- " ,style: TextStyle(fontSize:18,fontWeight: FontWeight.bold),),
-                          Text("500 /-",style: TextStyle(fontSize:16,)),
+                          Text("Fee :- " ,style: TextStyle(fontSize:15,fontWeight: FontWeight.bold),),
+                          Text("500 /-",style: TextStyle(fontSize:13,)),
                         ],
                       ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Mode :- " ,style: TextStyle(fontSize:18,fontWeight: FontWeight.bold),),
-                          Text("Online/Off",style: TextStyle(fontSize:16,)),
+                          Text("Mode :- " ,style: TextStyle(fontSize:15,fontWeight: FontWeight.bold),),
+                          Text("Online/Off",style: TextStyle(fontSize:13,)),
                         ],
                       ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("Designation :- " ,style: TextStyle(fontSize:18,fontWeight: FontWeight.bold),),
-                          Text("MBBS",style: TextStyle(fontSize:16,)),
+                          Text("Designation :- " ,style: TextStyle(fontSize:15,fontWeight: FontWeight.bold),),
+                          Text("MBBS",style: TextStyle(fontSize:13,)),
                         ],
                       )
                     ],

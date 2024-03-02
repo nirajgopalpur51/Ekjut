@@ -1,6 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:login_backend/Controller/Bindings.dart';
+import 'package:login_backend/Screens/EmeAmbulance.dart';
 import 'package:login_backend/Screens/doctor_schedule.dart';
 import 'package:login_backend/Screens/doctors_list.dart';
 import 'package:login_backend/Screens/home_screen.dart';
@@ -29,15 +32,17 @@ class MyApp extends StatelessWidget {
           create: (context) => LoginManager(),
         )
       ],
-      child: MaterialApp(
+      child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
+        initialBinding: LocationBinding(),
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
         // home: HomeScreen(),
         // home: Navigation(),
         home:FirebaseAuth.instance.currentUser != null?Navigation():LoginPage(),
+        // home: LocationPage(),
       ),
     );
   }

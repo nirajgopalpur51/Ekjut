@@ -51,17 +51,28 @@ class _MapScreenState extends State<MapSample> {
               desiredAccuracy: LocationAccuracy.high)
           .then((Position position) async {
         setState(() {
-          _currentPosition = position;
+          // _currentPosition = position;
           // print('CURRENT POS: $_currentPosition');
           mapController.animateCamera(
             CameraUpdate.newCameraPosition(
               CameraPosition(
-                target: LatLng(position.latitude, position.longitude),
-                zoom: 18.0,
+                target: LatLng(30.253069, 77.049752),
+                zoom: 15.0,
               ),
             ),
           );
         });
+        markers.add(
+          Marker(
+              infoWindow: const InfoWindow(title: "MMDU Hospital"),
+              markerId: const MarkerId('2'),
+              position: LatLng(30.253069, 77.049752),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()));
+              },
+              icon: BitmapDescriptor.defaultMarker),
+        );
         // await _getAddress();
         addCurrentLocationMark();
       }).catchError((e) {
@@ -74,18 +85,18 @@ class _MapScreenState extends State<MapSample> {
 
   Future<dynamic> addCurrentLocationMark() async {
     setState(() {
-      markers.add(
-        Marker(
-            infoWindow: const InfoWindow(title: "MMDU Hospital"),
-            markerId: const MarkerId('startPosition'),
-            position:
-                LatLng(_currentPosition.latitude, _currentPosition.longitude),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => HomeScreen()));
-            },
-            icon: BitmapDescriptor.defaultMarker),
-      );
+      // markers.add(
+      //   Marker(
+      //       infoWindow: const InfoWindow(title: "MMDU Hospital"),
+      //       markerId: const MarkerId('startPosition'),
+      //       position:
+      //           LatLng(_currentPosition.latitude, _currentPosition.longitude),
+      //       onTap: () {
+      //         Navigator.push(context,
+      //             MaterialPageRoute(builder: (context) => HomeScreen()));
+      //       },
+      //       icon: BitmapDescriptor.defaultMarker),
+      // );
       markers.add(
         Marker(
             infoWindow: const InfoWindow(title: "MMDU Hospital"),

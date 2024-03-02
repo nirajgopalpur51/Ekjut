@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
               Row(
                 children: [
-                  Text("MM SUPER SPECILITY HOSPITAL",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 23,color: Colors.red),),
+                  Text("MM SUPER SPECILITY HOSPITAL",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 21,color: Colors.red),),
                   // Text("From 9:00A.M -5:00 P.M",style: TextStyle(fontSize: 20),)
                 ],
               ),
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               Row(
                 children: [
                   Text("Emergency Timings :- ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-                  Text("Open 24 Hours",style: TextStyle(fontSize: 20),)
+                  Text("Open 24 Hr",style: TextStyle(fontSize: 20),)
                 ],
               ),
               Row(

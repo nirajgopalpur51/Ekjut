@@ -28,8 +28,8 @@ class _DepartmentListTabState extends State<DepartmentListTab> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
-                    height: 300,
-                    width: 170,
+                    height: 250,
+                    width: 150,
                     child: Column(
                       children: [
                         Image.asset('assets/icu.jpg'),
@@ -55,8 +55,8 @@ class _DepartmentListTabState extends State<DepartmentListTab> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
-                    height: 300,
-                    width: 170,
+                    height: 250,
+                    width: 150,
                     child: Column(
                       children: [
                         Image.asset('assets/2.png'),
@@ -87,8 +87,8 @@ class _DepartmentListTabState extends State<DepartmentListTab> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
-                    height: 300,
-                    width: 170,
+                    height: 250,
+                    width: 150,
                     child: Column(
                       children: [
                         Image.asset('assets/emergency.jpg'),
@@ -114,8 +114,8 @@ class _DepartmentListTabState extends State<DepartmentListTab> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
-                    height: 300,
-                    width: 170,
+                    height: 250,
+                    width: 150,
                     child: Column(
                       children: [
                         Image.asset('assets/Radiology.jpg'),

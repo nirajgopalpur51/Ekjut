@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:login_backend/Screens/EmeAmbulance.dart';
 import 'package:login_backend/Screens/appointment_screen.dart';
 import 'package:login_backend/Screens/home_screen.dart';
 import 'package:login_backend/Screens/map_screen.dart';
@@ -46,7 +47,7 @@ class NavigationState extends State<Navigation> {
       bodyScreen = MapSample();
     }
     if (index == 1) {
-      bodyScreen = SearchScreen();
+      bodyScreen = LocationPage();
     }
     if (index == 2) {
       bodyScreen = AppointmentScreen();
@@ -59,6 +60,9 @@ class NavigationState extends State<Navigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Ekjut"),
+      ),
       body: bodyScreen,
       // GoogleMap(
       //   markers: {_kGooglePlexMarker},

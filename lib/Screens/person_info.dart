@@ -41,7 +41,7 @@ class _PersonInfoState extends State<PersonInfo> {
                       child: Container(
                         height: 140,
                         width: 140,
-                        child: Image.asset('assets/doctor.jpg', fit: BoxFit.cover),
+                        child: Image.asset('assets/user.jpg', fit: BoxFit.cover),
 
 
 

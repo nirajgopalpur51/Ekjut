@@ -1,12 +1,18 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:login_backend/Screens/home_screen.dart';
+import 'package:login_backend/Screens/person_info.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:get/get.dart';
+
+import 'Ambulance.dart';
+import 'LogIn.dart';
 
 class MapSample extends StatefulWidget {
   const MapSample({super.key});
@@ -122,6 +128,73 @@ class _MapScreenState extends State<MapSample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Ekjut"),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView(
+                children: [
+                  UserAccountsDrawerHeader(
+                    decoration: BoxDecoration(color: Colors.green),
+                    accountName: Text("Niraj"),
+                    accountEmail: Text("niraj@gmail.com"),
+                    currentAccountPicture: CircleAvatar(
+                      backgroundImage:AssetImage("assets/user.jpg"),
+                      backgroundColor: Colors.green,
+                    ),
+                    onDetailsPressed: () {
+
+                      Get.to(PersonInfo());
+                    },
+                  ),
+                  ListTile(
+                    title: const Text(' Home'),
+                    leading: const Icon(Icons.home),
+                    onTap: () {
+                      Get.back();
+                    },
+                  ),
+                  ListTile(
+                    title: const Text(' Service'),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Get.back();
+                      // Get.toNamed(Routes.LOCATION);
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('Adoption Forum'),
+                    leading: const Icon(Icons.favorite_border, size: 30),
+                    onTap: () {
+                      // Get.toNamed(Routes.ADOPTION);
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('Ambulance'),
+                    leading: const Icon(Icons.emergency_share_sharp, size: 30),
+                    onTap: () {
+                      Get.to(Ambulance());
+                    },
+                  ),
+                ],
+              ),
+
+            ),
+
+            ListTile(
+              title: const Text('LogOut'),
+              leading: const Icon(Icons.logout),
+              onTap: () {
+                FirebaseAuth.instance.signOut();
+                Get.to(LoginPage());
+              },
+            ),
+          ],
+        ),
+      ),
       body: GoogleMap(
         initialCameraPosition: _initialLocation,
         markers: Set<Marker>.from(markers),
